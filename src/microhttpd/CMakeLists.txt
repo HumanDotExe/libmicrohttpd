@@ -29,6 +29,8 @@ add_library(microhttpd ${libraryType}
         mhd_itc.c
         mhd_compat.c
         response.c
+        mhd_send.c
+        sha256.c
 )
 
 if(NOT HAVE_SEARCH_H)

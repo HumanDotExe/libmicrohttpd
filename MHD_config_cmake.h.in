@@ -514,7 +514,7 @@
 #cmakedefine _MHD_ITC_SOCKETPAIR @_MHD_ITC_SOCKETPAIR@
 
 /* Define to prefix which will be used with MHD inline functions. */
-#cmakedefine _MHD_inline @_MHD_inline@
+#cmakedefine _MHD_static_inline @_MHD_static_inline@
 
 /* Define to 1 if it is required by headers to expose additional symbols */
 #cmakedefine _NETBSD_SOURCE @_NETBSD_SOURCE@

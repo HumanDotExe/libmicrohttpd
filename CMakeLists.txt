@@ -3,7 +3,7 @@
 #
 cmake_minimum_required(VERSION 3.1)
 
-list(APPEND CMAKE_MODULE_PATH ${CMAKE_SOURCE_DIR})
+list(APPEND CMAKE_MODULE_PATH ${CMAKE_CURRENT_SOURCE_DIR})
 
 include(CheckSymbolExists)
 include(CheckIncludeFiles)
@@ -20,7 +20,7 @@ include(cmake/DetermineStdCHeaders)
 
 set(major 0)
 set(minor 9)
-set(micro 55)
+set(micro 73)
 
 project(libmicrohttpd LANGUAGES C VERSION ${major}.${minor}.${micro})
 
@@ -472,7 +472,7 @@ foreach(PossibleInline ${PossibleInlines})
         HAVE_INLINE)
     if (HAVE_INLINE)
         set(INLINE_FUNC 1)
-        set(_MHD_inline "static ${PossibleInline}")
+        set(_MHD_static_inline "static ${PossibleInline}")
         break()
     endif()
 endforeach()
