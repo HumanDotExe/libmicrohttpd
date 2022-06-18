@@ -556,3 +556,5 @@
 /* Define to value interpreted by compiler as boolean "true", if "true" is not
    defined by system headers. */
 #cmakedefine true @true@
+
+#cmakedefine HAVE_GETSOCKNAME @HAVE_GETSOCKNAME@
